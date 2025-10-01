@@ -1,0 +1,66 @@
+git remote add origin https://github.com/Lsantosso/Nosso-tempo.git
+git branch -M main
+git push -u origin main
+
+
+
+<!DOCTYPE html> 
+<html lang="pt-br"> <head> 
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>NOSSO TEMPINHO! ❤️</title> <style> 
+body { 
+    font-family: 'Arial', sans-serif; background-color: #fce4ec; 
+    text-align: center; padding: 50px; color: #4a148c; } 
+    #container { 
+        background-color: white; 
+        padding: 30px; border-radius: 15px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        max-width: 600px; margin: 0 auto; 
+    } 
+        
+        h1 { color: #d81b60;} 
+        .time-count { font-size: 2em; margin: 20px 0; font-weight: bold; } 
+        
+        
+        </style> 
+        </head> 
+        
+        <body>
+             <div id="container"> 
+        <img class="imagem-redimensionada" src =" c:\Users\User\Downloads\setimo.jpg" alt= "um pelo outro!">
+
+        <h1>Um Presente Para a minha princesa!</h1> 
+        <p>Nosso tempinho juntos e aqui nosso painel: </p> 
+        <img src =" imagens/setimo.jpg" alt= "um pelo outro!">
+        <div id="resultado-tempo" class="time-count"> ... Calculando ... </div> 
+        <div id="mensagem-romantica"> </div> </div>
+         <script>
+        const dataInicio = new Date(2025, 0, 30); // Exemplo: 12 de Junho de 2023 
+        function calcularTempoDeNamoro() 
+        { const dataHoje = new Date();
+        const diferencaTempo = dataHoje - dataInicio; 
+        const msPorDia = 1000 * 60 * 60 * 24; const msPorMes = msPorDia * 30.4375;  
+        const msPorAno = msPorDia * 365.25; // Média // Cálculo das unidades 
+        const anos = Math.floor(diferencaTempo / msPorAno); 
+        const meses = Math.floor((diferencaTempo % msPorAno) / msPorMes); 
+        const dias = Math.floor((diferencaTempo % msPorMes) / msPorDia); 
+        let textoTempo = '';
+        if (anos > 0) { textoTempo += `${anos} ano${anos > 1 ? 's' : ''}, `; } 
+        if (meses > 0 || anos > 0) {  
+        textoTempo += `${meses} mese${meses > 1 ? 's' : ''} e `; } 
+        textoTempo += `${dias} dia${dias !== 1 ? 's' : ''}!`;
+        const mensagem = ` <p>Quero celebrar cada um desses momentos ao seu lado.</p> 
+        <br>
+        <p>Que seu jeitinho e alegria continue nos contagiando:</p> <ul> <li>A sua força e garra sendo apoiada.</li> 
+        <li>Obrigado por fazer parte e construir esses momentos e memorias.</li> 
+        <li>A forma como você sempre me apoia é maravilhoso.</li> </ul> 
+        <br>
+        <p>Feliz nosso dia 30! Com todo o meu coraçao e alma. Eu te amo!</p> `;
+        
+        document.getElementById('resultado-tempo').innerHTML = textoTempo; 
+        document.getElementById('mensagem-romantica').innerHTML = mensagem; }
+         calcularTempoDeNamoro(); 
+
+        </script> 
+    </body> 
+</html>
